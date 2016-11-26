@@ -39,7 +39,8 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch("*.html").on('change', browserSync.reload);
+    // gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("*.html",browserSync.reload);
 });
 
 //1. Less编译 压缩 合并
